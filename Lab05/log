@@ -1,0 +1,116 @@
+/home/arisdask/Lab05
+example1.c
+example1.out
+example2.c
+example2.out
+example3.c
+example3.out
+example4.c
+example4_lab04.c
+example4_lab04.out
+example4.out
+example5.c
+example5_lab4.c
+example5_lab4.out
+example5.out
+example6.c
+example6.out
+log
+  File: example1.c
+  Size: 485       	Blocks: 8          IO Block: 4096   regular file
+Device: 811h/2065d	Inode: 303175      Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1195/arisdask)   Gid: ( 1197/arisdask)
+Access: 2024-12-16 11:36:24.848011175 +0200
+Modify: 2024-12-16 11:35:57.219847875 +0200
+Change: 2024-12-16 11:35:57.219847875 +0200
+ Birth: -
+-bash: cd: /path/to/dir: No such file or directory
+cp: cannot stat 'source.txt': No such file or directory
+mv: cannot stat 'oldname.txt': No such file or directory
+rm: cannot remove 'random_file.txt': No such file or directory
+rmdir: failed to remove 'random_dir': No such file or directory
+rm: cannot remove 'some_dir': No such file or directory
+./example2.c
+./example4.c
+./example4_lab04.c
+./example5.c
+./ex1.c
+./example3.c
+./example1.c
+./example6.c
+./example5_lab4.c
+#include <stdio.h>
+
+int main(void) {
+    int x = 10;      // A normal integer variable
+    int *p;          // p is a pointer to an integer
+
+    p = &x;          // p now holds the address of x
+
+    printf("Value of x: %d\n", x);
+    printf("Address of x: %p\n", (void*)&x);
+    printf("Value of p: %p\n", (void*)p);
+    printf("Value pointed to by p: %d\n", *p);
+
+    *p = 20;         // Change the value of x using the pointer
+    printf("New value of x: %d\n", x);
+
+    return 0;
+}
+#include <stdio.h>
+
+int main(void) {
+    int x = 10;      // A normal integer variable
+    int *p;          // p is a pointer to an integer
+
+    p = &x;          // p now holds the address of x
+
+    printf("Value of x: %d\n", x);
+    printf("Address of x: %p\n", (void*)&x);
+    printf("Value of p: %p\n", (void*)p);
+    printf("Value pointed to by p: %d\n", *p);
+
+    *p = 20;         // Change the value of x using the pointer
+    printf("New value of x: %d\n", x);
+
+    return 0;
+}
+#include <stdio.h>
+#include <stdlib.h>
+#include <signal.h>
+#include <unistd.h>
+
+// Signal handler for SIGINT (does nothing)
+void sigint_handler(int sig) {
+    printf("\nReceived SIGINT (signal %d), but ignoring it.\n", sig);
+}
+
+    printf("Press Ctrl+C to attempt to send SIGINT.\n");
+
+    // Infinite loop to keep the program running
+    while (1) {
+        printf("Running... Try pressing Ctrl+C.\n");
+        sleep(2);
+    }
+
+    return 0;
+}
+Cloning into 'OS'...
+tar: dir: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+new_folder/
+new_folder/a2.txt
+new_folder/a1.txt
+new_folder/
+new_folder/a2.txt
+new_folder/a1.txt
+tar (child): archive.tar.gz: Cannot open: No such file or directory
+tar (child): Error is not recoverable: exiting now
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now
+new_folder/
+new_folder/a2.txt
+new_folder/a1.txt
+new_folder/
+new_folder/a2.txt
+new_folder/a1.txt
